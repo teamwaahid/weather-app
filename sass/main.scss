@@ -1,0 +1,132 @@
+@import "./common";
+
+body {
+  background-image: url(../images/bg-1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.search_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2rem;
+  input,
+  button {
+    border: 3px solid #ccc;
+    outline: none;
+    padding: 0.8rem 1rem;
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+  }
+  input {
+    background-color: whitesmoke;
+    color: black;
+  }
+  input:focus {
+    border: 3px solid rgba(0, 0, 0, 0.65);
+    transition: 1s;
+  }
+  button {
+    cursor: pointer;
+    margin-left: 2rem;
+  }
+  #search_btn:hover {
+    background-color: rgba(0, 0, 0, 0.65);
+    border: 3px solid rgba(0, 0, 0, 0.65);
+    color: white;
+    transition: 1s;
+  }
+}
+#temp,
+#pressure,
+#humidity {
+  color: red;
+}
+.inner_app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+  color: black;
+  .left_side {
+    background-color: rgba(200, 200, 204, 0.8);
+    width: 90%;
+    height: 80vh;
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    h2 {
+      font-size: 3rem;
+      padding: 2rem;
+    }
+    .city_name {
+      font-size: 1.8rem;
+    }
+    .weather_info {
+      font-size: 1.5rem;
+      padding: 1.5rem;
+    }
+    .weather_details {
+      font-size: 1.6rem;
+    }
+    .weather_logo {
+      width: 14rem;
+    }
+    .weather_logo img {
+      width: 100%;
+    }
+    h3 {
+      font-size: 1.8rem;
+    }
+    button {
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      color: rgb(255, 0, 0);
+    }
+  }
+
+  .right_side {
+    background-color: rgba(208, 208, 214, 0.8);
+    width: 90%;
+    height: 80vh;
+    padding: 0.8rem;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+    h2 {
+      font-size: 3rem;
+      padding: 2rem;
+    }
+    .history_card {
+      display: flex;
+      align-items: center;
+
+      .details {
+        text-align: left;
+        margin-left: 2rem;
+        font-weight: 600;
+        background-color: rgba(240, 248, 255, 0.5);
+        padding: 1rem;
+        border-radius: 1rem;
+        margin: 1rem 0;
+      }
+      h4 {
+        font-size: 1.6rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

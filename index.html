@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App | Wahid Hasan</title>
+    <link rel="stylesheet" href="./sass/main.css" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search_area">
+        <input
+          id="search_input"
+          type="text"
+          placeholder="Search By City Name...."
+        />
+        <button id="search_btn">Search</button>
+      </div>
+      <div class="inner_app">
+        <div class="left_side">
+          <h2>Your Search Result</h2>
+          <div class="app_icon">
+            <img id="app_icon" src="#" alt="" />
+          </div>
+          <h3 class="city_name">Hazaribagh, Dhaka</h3>
+          <p class="weather_info">Clear</p>
+          <div class="weather_details">
+            Temp: <span id="temp"></span><span id="tempUnit">°C</span>,
+            Pressure: <span id="pressure"></span>, Humidity:
+            <span id="humidity"></span>%
+          </div>
+          <button id="convertTemp">Convert Temp</button>
+          <div class="weather_logo">
+            <img src="./images/weather_logo.png" alt="" />
+          </div>
+          <h3>Weather Map BD</h3>
+        </div>
+        <div class="right_side">
+          <h2>Recent Search History</h2>
+          <div id="search_history"></div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
